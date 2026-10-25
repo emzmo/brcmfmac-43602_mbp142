@@ -1,0 +1,2 @@
+vendid=0x14e4
+devid=0x43ba

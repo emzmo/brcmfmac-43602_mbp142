@@ -1,0 +1,10 @@
+ccflags-y += -I$(src)/include -I$(src) -DDEBUG -DCONFIG_BRCMDBG
+
+obj-m += brcmfmac.o
+brcmfmac-objs += cfg80211.o chip.o fwil.o fweh.o p2p.o proto.o common.o core.o firmware.o fwvid.o feature.o btcoex.o vendor.o pno.o xtlv.o bcdc.o fwsignal.o commonring.o flowring.o msgbuf.o pcie.o dmi.o acpi.o stubs.o debug.o
+
+obj-m += brcmutil.o
+brcmutil-objs += utils.o d11.o
+
+obj-m += brcmfmac-wcc.o
+brcmfmac-wcc-objs += wcc/core.o wcc/module.o
